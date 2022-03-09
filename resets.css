@@ -93,8 +93,3 @@ a:hover {
 input::placeholder {
     opacity: 1;
 }
-
-::selection {
-    background-color: aliceblue;
-    color: #0a2b47;
-}
