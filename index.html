@@ -8,9 +8,18 @@
         <title>Esercizi CSS - Fabio Viscuso</title>
     </head>
     <body>
-        <main class="main">
-            <h1 class="main__title">Esercizi CSS - Fabio Viscuso</h1>
-            <section class="menu">
+        <input type="checkbox" name="color-toggle" id="color-toggle" />
+        <label for="color-toggle">
+            <p class="toggle__label toggle__label--tolight">
+                Switch to light mode!
+            </p>
+            <p class="toggle__label toggle__label--todark">
+                Switch to dark mode!
+            </p>
+        </label>
+        <main class="menu">
+            <h1 class="menu__title">Esercizi CSS - Fabio Viscuso</h1>
+            <div class="menu__column">
                 <a class="menu__item" href="esercizio-1/index.html"
                     >Esercizio 01 - Riscrittura regole</a
                 >
@@ -20,6 +29,8 @@
                 <a class="menu__item" href="esercizio-3/index.html"
                     >Esercizio 03 - Flexbox</a
                 >
+            </div>
+            <div class="menu__column">
                 <a class="menu__item" href="esercizio-4/index.html"
                     >Esercizio 04 - Grid</a
                 >
@@ -29,16 +40,18 @@
                 <a class="menu__item" href="esercizio-6/index.html"
                     >Esercizio 06 - Blocks II</a
                 >
+            </div>
+            <div class="menu__column">
                 <a class="menu__item" href="esercizio-7/index.html"
                     >Esercizio 07 - Blocks III</a
                 >
                 <a class="menu__item" href="esercizio-8/index.html"
-                    >Esercizio 08 - Block IV</a
+                    >Esercizio 08 - Blocks IV</a
                 >
                 <a class="menu__item" href="esercizio-9/index.html"
                     >Esercizio 09 - Responsive</a
                 >
-            </section>
+            </div>
         </main>
     </body>
 </html>
