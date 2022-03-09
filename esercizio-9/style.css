@@ -1,0 +1,140 @@
+body {
+    /* Just to make content appear on page center */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* LAYOUT */
+.slideshow {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+@media only screen and (max-width: 768px) {
+    .slideshow {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media only screen and (max-width: 375px) {
+    .slideshow {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* COMPONENTS */
+.card {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 35rem;
+    border-radius: 25px;
+    box-shadow: 6px 6px 10px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: default;
+    user-select: none;
+}
+
+.card__header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+    background-color: slategray;
+}
+
+.card__menu-btn {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-left: auto;
+    height: 4rem;
+    cursor: pointer;
+}
+
+.card__menu-dot {
+    width: 1rem;
+    height: 1rem;
+    background-color: #000000;
+    border-radius: 50%;
+}
+
+.card__text-container {
+    height: 15rem;
+    padding: 1rem 1.5rem;
+    background-color: rgb(209, 209, 209);
+    overflow: auto;
+}
+
+.card__icons {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: start;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem 3.2rem 0;
+    background-color: rgb(209, 209, 209);
+}
+
+/* IMAGES */
+.card__avatar {
+    width: 5rem;
+    height: 5rem;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+.card__img {
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+}
+
+.card__icon {
+    width: 2.5rem;
+    fill: black;
+    cursor: pointer;
+}
+.card__icon:hover {
+    fill: white;
+}
+.card__icon:focus,
+.card__icon:active {
+    fill: red;
+}
+
+/* TYPOGRAPHY */
+.card__name {
+    font-size: 1.5rem;
+}
+.card__date {
+    font-size: 1.4rem;
+    color: white;
+}
+.card__text {
+    font-size: 1.4rem;
+}
+
+/* HELPERS */
+
+.txt-bold {
+    font-weight: 700;
+}
+
+/* Nav btn - COMMON FOR ALL EXERCISE PAGES */
+a.menu-btn {
+    position: fixed;
+    right: 5%;
+    top: 5%;
+    padding: 1rem 1.5rem;
+    font-family: sans-serif;
+    font-size: 2rem;
+    border: 2px solid darkslategrey;
+    border-radius: 25px;
+    background-color: aliceblue;
+    color: darkslategrey;
+    text-decoration: none;
+}
