@@ -1,0 +1,66 @@
+@import "../resets.css";
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    display: grid;
+    grid-template-areas:
+        "result     result      result      result"
+        "operator   operator    operator    operator"
+        "element    element     element     equals"
+        "element    element     element     equals"
+        "element    element     element     equals"
+        "element    element     element     equals";
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.1);
+}
+
+.calculator__element {
+    font-size: 25px;
+    font-weight: 700;
+    width: 90px;
+    height: 70px;
+    background-color: #eef1f4;
+    border-top: 2px solid #889bab;
+    border-right: 2px solid #889bab;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator__element--result {
+    font-size: 35px;
+    width: 100%;
+    padding-right: 15px;
+    background-color: #444d52;
+    color: #eef1f4;
+    border: none;
+
+    grid-area: result;
+    display: flex;
+    justify-content: end;
+}
+
+.calculator__element--operator {
+    border-top: none;
+    background-color: #d1dbe2;
+}
+.calculator__element--operator:nth-child(5) {
+    border-right: none;
+}
+
+.calculator__element--equals {
+    height: 100%;
+    background-color: #f46d77;
+    border-right: none;
+
+    grid-area: equals;
+    display: flex;
+    align-items: center;
+}
