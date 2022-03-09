@@ -1,0 +1,50 @@
+body {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+#green,
+#yellow,
+#red,
+#blue {
+    flex: 1 1 10%;
+}
+#green {
+    order: 3;
+}
+#yellow {
+    order: 1;
+}
+#orange {
+    order: 4;
+    flex: 1 1 60%;
+}
+#red {
+    order: 2;
+}
+#blue {
+    order: 5;
+}
+
+ul {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Nav btn - COMMON FOR ALL EXERCISE PAGES */
+a.menu-btn {
+    position: fixed;
+    right: 5%;
+    top: 5%;
+    padding: 10px 15px;
+    font-family: sans-serif;
+    font-size: 20px;
+    border: 2px solid darkslategrey;
+    border-radius: 25px;
+    background-color: aliceblue;
+    color: darkslategrey;
+    text-decoration: none;
+}
