@@ -1,0 +1,54 @@
+body {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+        "yellow yellow"
+        "blue orange"
+        "blue red"
+        "blue green";
+}
+
+#green {
+    grid-area: green;
+}
+#yellow {
+    grid-area: yellow;
+}
+#orange {
+    grid-area: orange;
+}
+#red {
+    grid-area: red;
+}
+#blue {
+    grid-area: blue;
+}
+
+section ul {
+    display: flex;
+    justify-content: center;
+}
+
+section ul li {
+    flex: 1 1 auto;
+}
+
+#yellow ul li:first-child {
+    flex: 3 1 auto;
+}
+
+/* Nav btn - COMMON FOR ALL EXERCISE PAGES */
+a.menu-btn {
+    position: fixed;
+    right: 5%;
+    top: 5%;
+    padding: 10px 15px;
+    font-family: sans-serif;
+    font-size: 20px;
+    border: 2px solid darkslategrey;
+    border-radius: 25px;
+    background-color: aliceblue;
+    color: darkslategrey;
+    text-decoration: none;
+}
