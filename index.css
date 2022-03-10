@@ -2,7 +2,7 @@
 
 :root {
     --txt-color: #f0f8ff;
-    --txt-color-2: #fff8dc;
+    --txt-color-2: #f8ebb9;
     --bg-color: #0a2b47;
 }
 
@@ -80,12 +80,14 @@
     background-color: var(--bg-color);
     color: var(--txt-color);
     letter-spacing: 1px;
+    transition: all 0.2s ease;
 }
 
 .menu__title {
-    color: var(--txt-color);
+    color: var(--txt-color-2);
     text-align: center;
     font-size: 6rem;
+    text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.3);
     grid-area: header;
     transition: all 0.2s linear;
 }
@@ -117,6 +119,7 @@
 }
 .menu__item:hover {
     color: var(--txt-color-2);
+    transform: translateY(-5px);
     box-shadow: 0px 10px 4px 4px rgba(0, 0, 0, 0.3),
         inset 0px 0px 4px 4px rgba(0, 0, 0, 0.3);
     transition: all 0.2s linear;
