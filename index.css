@@ -65,6 +65,33 @@
     opacity: 0;
 }
 
+.download-btn {
+    position: fixed;
+    bottom: 5%;
+    right: 10%;
+
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 1rem;
+
+    padding: 2rem;
+}
+
+.download-btn__icon {
+    display: block;
+    width: 4rem;
+    padding: 5px;
+    fill: var(--bg-color);
+    background-color: var(--txt-color);
+    border-radius: 50%;
+}
+
+.download-btn__text {
+    font-size: 1.3rem;
+    color: var(--txt-color);
+}
+
 .menu {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
