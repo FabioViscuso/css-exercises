@@ -17,22 +17,10 @@
 html {
     font-family: sans-serif;
 }
-/* Small devices (landscape phones, 576px and up) */
-@media only screen and (max-width: 576px) {
-    html {
-        font-size: 5px;
-    }
-}
-/* Small devices (landscape phones, 576px and up) */
-@media only screen and (min-width: 576px) {
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
     html {
         font-size: 6px;
-    }
-}
-/* Medium devices (tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-    html {
-        font-size: 7px;
     }
 }
 /* Large devices (desktops, 992px and up) */
