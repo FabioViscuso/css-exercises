@@ -27,8 +27,8 @@ body {
     display: flex;
     flex-flow: column nowrap;
     width: 35rem;
-    border-radius: 25px;
-    box-shadow: 6px 6px 10px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    box-shadow: 6px 6px 20px 4px rgba(0, 0, 0, 0.12);
     overflow: hidden;
     cursor: default;
     user-select: none;
@@ -94,15 +94,18 @@ body {
 
 .card__icon {
     width: 2.5rem;
-    fill: black;
+    fill: #000000;
     cursor: pointer;
+    transition: all 0.15s ease;
 }
 .card__icon:hover {
-    fill: white;
+    transition: all 0.15s ease;
+    fill: #ffffff;
 }
 .card__icon:focus,
 .card__icon:active {
-    fill: red;
+    transition: all 0.15s ease;
+    fill: #1152c9;
 }
 
 /* TYPOGRAPHY */
